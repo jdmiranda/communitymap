@@ -1,9 +1,12 @@
+
+
 var village;
 (function () {
     "use strict";
 
+    
     L.mapbox.accessToken = 'pk.eyJ1IjoiYW1icmlhc2hpciIsImEiOiJjaWZ0MXAybDcwZ3I2dHRseWI3NjAyMTZ2In0.eD7uxIRAY9ifI6ecnkiu-g';
-    var map = L.mapbox.map('map', 'mapbox.streets').setView([35.914539, -86.847597], 13).addControl(L.mapbox.geocoderControl('mapbox.places', {
+    var map = L.mapbox.map('map', 'mapbox.streets').setView([25.990348, -80.383471], 13).addControl(L.mapbox.geocoderControl('mapbox.places', {
         autocomplete: true })),
      json = $.getJSON('http://villagemapserver.herokuapp.com/neighborhoods', processJsonGroups);
     var markers = new L.MarkerClusterGroup();
