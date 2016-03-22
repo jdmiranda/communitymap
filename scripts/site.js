@@ -5,7 +5,7 @@ var village;
 // Accounts
 // ###############################################################################
 function accounts(){
-   window.location.href = "http://myurl.com";                
+   window.location.href = "./accounts.html";                
  }
 
 // Maps
